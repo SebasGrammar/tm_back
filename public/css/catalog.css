@@ -1,3 +1,15 @@
+:root {
+    --general-padding: 10px 50px;
+    --horizontal-padding: 0 50px;
+    --gap: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     
 }
@@ -11,4 +23,58 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    padding: var(--general-padding);
+    
+
+}
+
+.card {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+
+    display: grid;
+    grid-template-rows: 40px 250px 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    
+}
+
+.product-picture {
+    width: 80%;
+
+    object-fit: cover;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.sidebar a {
+    margin-bottom: ;
+    padding: var(--general-padding);
+
+    text-decoration: none;
+}
+
+/* CONTAINER */
+
+.container {
+    padding: ;
 }

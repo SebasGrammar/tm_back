@@ -24,10 +24,17 @@
         <div class="sub-grid">
             <% products.forEach(product => { %>
             <div class="card">
-                <p><%= product.name %></p>
-                <a href="<%=`/products/product/${product._id}`%>">Link</a>
-                <img src="<%= product.picture %>" alt="" style="width: 80px">
-                <p><%= product._id %></p>
+                <h2><%= product.name %></h2>
+                <!-- <a href="<%=`/products/product/${product._id}`%>">Link</a>
+                <img src="<%= product.picture %>" alt="" style="width: 80px"> -->
+
+                <div class="picture">
+
+                    <a href="<%=`/products/product/${product._id}`%>"><img src="<%= product.picture %>" alt=""
+                            class="product-picture"></a>
+
+                </div>
+                <!-- <p><%= product._id %></p> -->
 
 
                 <a class="button" href="<%=`/products/${product._id}/edit`%>">
