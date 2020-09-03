@@ -1,4 +1,32 @@
-<h1>HEllo</h1>
-<h1><%= product.name %></h1>
+<div class="detailed-view">
+
+    <!-- <h1><%= product.name %></h1>
 <h1><%= product.picture %></h1>
-<img src="<%= `${product.picture}`%>" alt="">
+<img src="<%= `${product.picture}`%>" alt=""> -->
+
+    <div class="pictures">
+
+        <img src="<%= `${product.picture}`%>" alt="" style="width: 100%;">
+
+    </div>
+
+    <div class="product-information">
+        <h2><%= product.name %></h2>
+        <!-- <p><%= product.description %></p> -->
+        <p>
+            Donec est nulla, sollicitudin eget mauris eget, tincidunt faucibus sem. Interdum et malesuada fames ac ante
+            ipsum primis in faucibus. Praesent consectetur urna at ipsum molestie, eget tincidunt velit maximus. Aenean
+            justo tortor, ultrices nec est ut, hendrerit finibus purus. Cras in diam et dui dictum luctus. Suspendisse
+            ut nisi eget nisl accumsan porttitor. Duis vehicula lacinia dolor, id fermentum nulla tempus eu. Fusce
+            pellentesque diam quam. In sed eros sit amet nunc tempus tempor ac non metus. Nam sed lacus libero. Mauris a
+            velit a arcu tempor imperdiet vitae non nisi. Sed aliquet faucibus mauris, non sollicitudin dolor dapibus
+            eget. Donec facilisis tellus massa, sit amet tempus ante ornare ut. Suspendisse interdum rhoncus eros, vel
+            lacinia leo congue eget.
+        </p>
+
+        <button class="request-quote">Solicitar cotización</button>
+
+    </div>
+
+
+</div>

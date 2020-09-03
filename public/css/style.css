@@ -349,3 +349,24 @@ form {
 textarea {
     resize: none;
 }
+
+/* DETAILED VIEW */
+
+.detailed-view {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.detailed-view > * {
+    padding: var(--general-padding);
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-information > * {
+    margin-bottom: 15px;
+}
