@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
+    <title>TECNIMOTORES</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="/css/confetti_cuisine.css"> -->
+    <link rel="stylesheet" href="/css/catalog.css">
+</head>
+
+<body>
+
+
+    <div class="grid">
+
+        <div class="sidebar">
+
+            <%- include('components/sidebar'); -%>
+
+        </div>
+
+        <div class="sub-grid">
+            <% products.forEach(product => { %>
+            <div class="card">
+                <p><%= product.name %></p>
+                <a href="<%=`/products/product/${product._id}`%>">Link</a>
+                <img src="<%= product.picture %>" alt="" style="width: 80px">
+                <p><%= product._id %></p>
+
+
+                <a class="button" href="<%=`/products/${product._id}/edit`%>">
+                    Editar producto
+                </a>
+
+                <a class="button" href="<%= `/products/${product._id}/delete?_method=DELETE` %>"
+                    onclick="return confirm('Are you sure you want to delete this record?')">Borrar</a>
+            </div>
+            <% }); %>
+
+        </div>
+
+    </div>
+
+</body>

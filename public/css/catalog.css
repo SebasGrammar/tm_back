@@ -1,0 +1,14 @@
+body {
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}

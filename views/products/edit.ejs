@@ -1,0 +1,14 @@
+<div class="data-form">
+    <form class="form-signin" method="POST" action="<%=`/products/${product._id}/update?_method=PUT`%>">
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="name" placeholder="Nombre" value="<%= product.name %>">
+        <!-- <label for="imagen">Imagen: </label> -->
+        <!-- <input type="text" name="imagen" id="imagen" placeholder="Imagen"> -->
+        <label for="picture">Imagen: </label>
+        <input type="text" name="picture" id="picture" placeholder="Imagen" value="<%= product.picture %>">
+        <label for="tag">Etiqueta: </label>
+        <input type="text" name="tag" id="tag" placeholder="Etiqueta" value="<%= product.tag %>">
+        <button type="submit">Guardar</button>
+        <!-- <button type="submit" onclick="" >Cancelar</button> -->
+    </form>
+</div>

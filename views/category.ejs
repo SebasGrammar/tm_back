@@ -1,0 +1,8 @@
+<%- include('components/sidebar'); -%>
+
+<div class="container">
+    <% category.forEach(product => { %>
+    <p><%= product.name %></p>
+    <img src="<%= product.picture %>" alt="" style="width: 80px">
+    <% }); %>
+</div>

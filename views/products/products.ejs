@@ -1,0 +1,7 @@
+<div class="container">
+    <% products.forEach(product => { %>
+    <p><%= product.name %></p>
+    <img src="<%= product.picture %>" alt="" style="width: 80px">
+    <a class="button" href="<%= `/products/${product._id}/delete?_method=DELETE` %>" onclick="return confirm('Are you sure you want to delete this record?')">Borrar</a>
+    <% }); %>
+</div>
