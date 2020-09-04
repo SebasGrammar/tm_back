@@ -81,32 +81,6 @@ app.get("/", function (req, res) {
 
 /*************************************************************************/
 
-// app.get("/products", function (req, res) {
-//     Product.find({}) // a promise containing all elements associated to the Product model.
-//         .then(products => {
-//             res.render("../views/products", {
-//                 products
-//             })
-//         })
-//         .catch(error => {
-//             console.log(`Error fetching users: ${error.message}`)
-//             res.redirect("/");
-//         });
-// })
-
-// app.get("/products", function (req, res) {
-//     Product.find({tag: "pump"}) // a promise containing all elements associated to the Product model.
-//         .then(products => {
-//             res.render("../views/products", {
-//                 products
-//             })
-//         })
-//         .catch(error => {
-//             console.log(`Error fetching users: ${error.message}`)
-//             res.redirect("/");
-//         });
-// })
-
 app.get("/products", function (req, res) {
     Product.find({})
         .then(products => {
