@@ -365,6 +365,13 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
+}
+
+.pictures > img:hover {
+    
+    transform: scale(2);
 }
 
 .product-information > * {
