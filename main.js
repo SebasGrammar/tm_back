@@ -84,6 +84,7 @@ app.get("/", function (req, res) {
 app.get("/products", function (req, res) {
     Product.find({})
         .then(products => {
+            products.forEach(product => console.log(product.tag))
             res.render("../views/products", {
                 products
             })
@@ -103,9 +104,25 @@ app.get("/products/add", function (req, res) {
     res.render("products/create")
 })
 
+// app.get("/products/:tag", function (req, res) {
+//     let tag = req.params.tag;
+//     console.log(`TAG: ${tag}`)
+//     Product.find({ tag })
+//         .then(category => {
+//             res.render("../views/category", {
+//                 category
+//             })
+//         })
+//         .catch(error => {
+//             console.log(`Error fetching products: ${error.message}`)
+//             res.redirect("/");
+//         });
+// })
+
 app.get("/products/:tag", function (req, res) {
     let tag = req.params.tag;
     console.log(`TAG: ${tag}`)
+
     Product.find({ tag })
         .then(category => {
             res.render("../views/category", {
