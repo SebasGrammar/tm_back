@@ -353,8 +353,11 @@ textarea {
 /* DETAILED VIEW */
 
 .detailed-view {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+
+    display: flex;
+    flex-direction: column;
 }
 
 .detailed-view > * {
@@ -366,6 +369,9 @@ textarea {
     justify-content: center;
     align-items: center;
 
+    
+    
+
     overflow: hidden;
 }
 
@@ -376,4 +382,17 @@ textarea {
 
 .product-information > * {
     margin-bottom: 15px;
+}
+
+.quote {
+    
+    width: 20%;
+
+    padding: 10px 30px;
+
+    border: none;
+    
+
+    background: red;
+    color: #FFF;
 }

@@ -62,15 +62,29 @@ body {
     display: flex;
     flex-direction: column;
 
-    border-right: 1px solid gray;
+    padding: 5px 0 20px 5px;
+    /* border-right: 1px solid gray; */
+
+
    
 }
 
+.odd {
+    background: rgb(216, 212, 212);
+}
+
 .sidebar a {
+    display: flex;
+
     margin-bottom: ;
     padding: var(--general-padding);
 
+    
     text-decoration: none;
+}
+
+.sidebar a:active {
+    background: red;
 }
 
 /* CONTAINER */
@@ -78,3 +92,5 @@ body {
 .container {
     padding: ;
 }
+
+/************/
