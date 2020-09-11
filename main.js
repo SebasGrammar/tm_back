@@ -45,35 +45,35 @@ app.use(express.json());
 
 //app.get("/", homeController.index);
 
-Product.deleteMany({})
-    .exec()
-    .then(() => {
-        console.log("All products have been removed from the database.");
-    });
+// Product.deleteMany({})
+//     .exec()
+//     .then(() => {
+//         console.log("All products have been removed from the database.");
+//     });
 
-Product.create({
-    name: "Bomba",
-    picture: "/images/catalog/pump.jpg",
-    tag: "pump"
-})
+// Product.create({
+//     name: "Bomba",
+//     picture: "/images/catalog/pump.jpg",
+//     tag: "pump"
+// })
 
-Product.create({
-    name: "Bomba 2",
-    picture: "/images/catalog/test.jpg",
-    tag: "pump"
-})
+// Product.create({
+//     name: "Bomba 2",
+//     picture: "/images/catalog/test.jpg",
+//     tag: "pump"
+// })
 
-Product.create({
-    name: "Bomba",
-    picture: "/images/catalog/pump.jpg",
-    tag: "motor"
-})
+// Product.create({
+//     name: "Bomba",
+//     picture: "/images/catalog/pump.jpg",
+//     tag: "motor"
+// })
 
-Product.create({
-    name: "Motorreductor",
-    picture: "/images/catalog/pump.jpg",
-    tag: "motor_reducer"
-})
+// Product.create({
+//     name: "Motorreductor",
+//     picture: "/images/catalog/pump.jpg",
+//     tag: "motor_reducer"
+// })
 
 app.get("/", function (req, res) {
     res.render("index");
