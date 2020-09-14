@@ -30,19 +30,20 @@
 
                 <div class="picture">
 
-                    <a href="<%=`/products/product/${product._id}`%>"><img src="<%= product.picture %>" alt=""
+                    <a href="<%=`/products/product/${product._id}`%>" style="display: flex; justify-content: center; align-items: center;"><img src="<%= product.picture %>" alt=""
                             class="product-picture"></a>
 
                 </div>
                 <!-- <p><%= product._id %></p> -->
 
+                <!-- will add this to the admin panel later -->
 
-                <a class="button" href="<%=`/products/${product._id}/edit`%>">
+                <!-- <a class="button" href="<%=`/products/${product._id}/edit`%>">
                     Editar producto
-                </a>
+                </a> -->
 
-                <a class="button" href="<%= `/products/${product._id}/delete?_method=DELETE` %>"
-                    onclick="return confirm('Are you sure you want to delete this record?')">Borrar</a>
+                <!-- <a class="button" href="<%= `/products/${product._id}/delete?_method=DELETE` %>"
+                    onclick="return confirm('Are you sure you want to delete this record?')">Borrar</a> -->
             </div>
             <% }); %>
 
